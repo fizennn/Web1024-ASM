@@ -1,0 +1,99 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/payment.css">
+
+</head>
+
+<body>
+    <div class="header">
+
+    </div>
+    <div class="menu" id="pc">
+        <a href="home.html"><img src="img/logoValorant.png" alt="logo" height="50px"></a>
+        <li><a href="">Weapon</a></li>
+        <li><a href="">Agent</a></li>
+        <li><a href="">Map</a></li>
+        <li><a href="">Comunity</a></li>
+        <div class="function">
+            <img width="30" height="30" src="img/icons8-search-100.png" alt="search--v1" />
+            <a href="cart.html"><img width="30" height="30" src="img/icons8-cart-100 (2).png" alt="search--v1" /></a>
+            <img width="30" height="30" src="img/icons8-global-100.png" alt="search--v1" />
+        </div>
+    </div>
+    <div class="menu" id="mb">
+        <img src="img/logoValorant.png" alt="logo" height="50px">
+        <div class="function">
+            <img width="30" height="30" src="img/icons8-search-100.png" alt="search--v1" />
+            <a href="cart.html"><img width="30" height="30" src="img/icons8-cart-100 (2).png" alt="search--v1" /></a>
+            <img width="30" height="30" src="img/icons8-global-100.png" alt="search--v1" />
+            <img width="30" height="30" src="img/icons8-menu-100.png" alt="menu--v1" onclick="mbMenu()" />
+        </div>
+    </div>
+    <div class="mb" id="mb-menu">
+        <li><a href="">Weapon</a></li>
+        <li><a href="">Agent</a></li>
+        <li><a href="">Map</a></li>
+        <li><a href="">Comunity</a></li>
+    </div>
+
+    <div class="content">
+
+        <h1 style="margin-top: 4đpx;">Valorant - Payment</h1>
+
+        <div class="invoice-container">
+            <h2>Invoice</h2>
+        
+            <div class="invoice-header">
+                <div class="form-group">
+                    <label for="name">Date:</label>
+                    <input type="text" id="currentDate" placeholder="Enter date" disabled>
+                </div>
+            </div>
+        
+            <div class="invoice-body">
+                <div class="form-group">
+                    <label for="name">Customer Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <div style="display: flex;">
+                        <input type="text" id="address" placeholder="Enter your address" style="margin-right: 5px;">
+                        <button type="button" onclick="getLocation()">Get location</button>
+                    </div>
+                    
+                </div>
+                <div class="form-group">
+                    <label for="total">Total Amount :</label>
+                    <input type="number" id="total" placeholder="Enter total amount" disabled>
+                </div>
+                <div class="form-group">
+                    <button type="button" onclick="submitForm()" style="width: 100%; height: 70px; font-size: 19px;">Generate Invoice</button>
+                </div>
+            </div>
+        
+            <div id="result" class="result" style="display: none;"></div>
+        </div>
+
+    </div>
+
+
+
+    <div class="footer">
+        <p>Lưu Quang Huy - PH49142</p>
+    </div>
+
+    <script src="js/payment.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+.skin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    
+}
+.skin1{
+    width: 70%;
+    
+}
+.skin1 img{
+    width: 100%;
+}
+.skin2{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 30%;
+}
+.skin2 h3{
+    color: rgb(255, 70, 85);
+    font-size: 35px;
+    margin: 0px;
+}
+.skin2 h4{
+    color: rgb(48, 48, 48);
+    margin: 0px;
+    margin-top: 10px;
+}
+.skin2 button{
+    margin-top: 10px;
+    height: 40px;
+    background-color: rgb(255, 70, 85);
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+.other{
+    margin-bottom: 300px;
+}
+
+.item{
+    background-color: rgba(223, 211, 211, 0.5) !important;
+}
